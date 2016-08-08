@@ -1,6 +1,6 @@
 <?php
 
-namespace lajax\languagepicker\bundles;
+namespace soap\LanguageSwitcher\bundles;
 
 use yii\web\AssetBundle;
 
@@ -14,13 +14,13 @@ class LanguageSmallIconsAsset extends AssetBundle {
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vendor/soap/yii2-language-picker/src/assets';
+    public $sourcePath = '@vendor/soap/yii2-language-switcher/src/assets';
 
     /**
      * @inheritdoc
      */
     public $css = [
-        'stylesheets/language-picker.min.css',
+        'stylesheets/language-switcher.min.css',
         'stylesheets/flags-small.min.css',
     ];
 

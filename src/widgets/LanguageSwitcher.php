@@ -1,6 +1,6 @@
 <?php
 
-namespace soap\LanguagePicker\widgets;
+namespace soap\LanguageSwitcher\widgets;
 
 use Yii;
 use yii\helpers\Url;
