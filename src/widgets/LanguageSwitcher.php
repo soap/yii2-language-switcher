@@ -139,11 +139,11 @@ class LanguageSwitcher extends Widget
         if ($this->_isError) {
             return '';
         } else {
-            //if ($this->skin == self::SKIN_BUTTON) {
-            //    $languagePicker = $this->_renderButton($isInteger);
-            //} else {
+            if ($this->skin == self::SKIN_BUTTON) {
+                $languagePicker = $this->_renderButton();
+            } else {
                 $languagePicker = $this->_renderDropdown();
-           // }
+            }
 
             echo $languagePicker;
         }
@@ -200,6 +200,7 @@ class LanguageSwitcher extends Widget
         }
 
     }
+
     /**
      * Rendering dropdown list.
      * @param boolean $isInteger
@@ -207,12 +208,8 @@ class LanguageSwitcher extends Widget
      */
     private function _renderDropdown()
     {
-        $currentLanguage = [
-            'code' => Yii::$app->language,
-            'label' => self::label(Yii::$app->language),
-            'url' => '#'
-        ];
 
+        $currentLanguage = $this->getCurrentLanguage();
         $activeItem = $this->renderItem($currentLanguage, $this->activeItemTemplate);
 
         $items = '';
@@ -223,6 +220,23 @@ class LanguageSwitcher extends Widget
         return strtr($this->parentTemplate, ['{activeItem}' => $activeItem, '{items}' => $items, '{size}' => $this->size]);
     }
 
+    /**
+     * Rendering button list.
+     * @param boolean $isInteger
+     * @return string
+     */
+    private function _renderButton()
+    {
+        $items = '';
+        $currentLanguage = $this->getCurrentLanguage();
+        $items .= $this->renderItem($currentLanguage, $this->activeItemTemplate);
+
+        foreach ($this->_items as $language) {
+            $items .= $this->renderItem($language, $this->itemTemplate);
+        }
+
+        return strtr($this->parentTemplate, ['{items}' => $items, '{size}' => $this->size]);
+    }
     /**
      * Rendering languege element.
      * @param string $language The property of a given language.
@@ -246,5 +260,18 @@ class LanguageSwitcher extends Widget
             '{name}' => $label,
             '{language}' => $name,
         ]);
+    }
+
+    /**
+     * Get current language in formatted array
+     * @return array
+     */
+    private function getCurrentLanguage()
+    {
+        return [
+            'code' => Yii::$app->language,
+            'label' => self::label(Yii::$app->language),
+            'url' => '#'
+        ];
     }
 }
