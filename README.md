@@ -4,6 +4,8 @@ Yii2 language switcher to use with codemix/yii2-localeurls.
 
 How to use
 ----------
+First you have to make setting for codemix/yii2-localeurls. Please refer to his document.
+
 
 ```php
 <?= \soap\LanguageSwitcher\widgets\LanguageSwitcher::widget([
