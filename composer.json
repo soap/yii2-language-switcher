@@ -1,7 +1,7 @@
 {
     "name": "soap/yii2-language-switcher",
     "description": "Yii language switcher to be used with codemix/yii2-localeurls",
-    "type": "Yii2 widget",
+    "type": "yii2-widget",
     "require": {
         "php": ">= 5.4.0",
         "yiisoft/yii2": "~2.0",
