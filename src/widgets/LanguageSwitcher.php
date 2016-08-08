@@ -9,7 +9,7 @@ use yii\base\Widget;
 use yii\bootstrap\ButtonDropdown;
 use yii\bootstrap\Dropdown;
 
-class LanguagePicker extends Widget
+class LanguageSwitcher extends Widget
 {
     /**
      * Type of pre-defined skins (drop down list).
@@ -51,8 +51,8 @@ class LanguagePicker extends Widget
      * @var array List of pre-defined skins.
      */
     private $_SIZES = [
-        self::SIZE_SMALL => 'soap\LanguagePicker\bundles\LanguageSmallIconsAsset',
-        self::SIZE_LARGE => 'soap\LanguagePicker\bundles\LanguageLargeIconsAsset',
+        self::SIZE_SMALL => 'soap\LanguageSwitcher\bundles\LanguageSmallIconsAsset',
+        self::SIZE_LARGE => 'soap\LanguageSwitcher\bundles\LanguageLargeIconsAsset',
     ];
     /**
      * @var string ID of pre-defined skin (optional).
