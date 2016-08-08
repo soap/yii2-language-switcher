@@ -1,0 +1,23 @@
+{
+    "name": "soap/yii2-language-picker",
+    "description": "Yii language picker to be used with codemix/yii2-localeurls",
+    "type": "Yii2 widget",
+    "require": {
+        "php": ">= 5.4.0",
+        "yiisoft/yii2": "~2.0",
+        "codemix/yii2-localeurls": "^1.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Prasit Gebsaap",
+            "email": "prasit.gebsaap@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "soap\\LanguagePicker\\": "src/"
+        }
+    }
+}
