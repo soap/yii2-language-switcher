@@ -10,10 +10,16 @@ Yii2 language switcher to use with [codemix/yii2-localeurls](https://github.com/
 
 Thanks to [lajax/yii2-language-picker](https://github.com/lajax/yii2-language-picker) for some code/assets and inspiration.
 
+Installation
+------------
+Install through composer is the preferable way.
+
+```composer require soap/yii2-language-switcher "@dev"``
+
 How to use
 ----------
 First you have to make setting for codemix/yii2-localeurls. Please refer to his document.
-
+Then put the widget in your layout.
 
 ```php
 <?= \soap\LanguageSwitcher\widgets\LanguageSwitcher::widget([
