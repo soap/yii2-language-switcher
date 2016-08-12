@@ -8,6 +8,7 @@
 
 Yii2 language switcher to use with [codemix/yii2-localeurls](https://github.com/codemix/yii2-localeurls).
 
+Thanks to [lajax/yii2-language-picker](https://github.com/lajax/yii2-language-picker) for some code/assets and inspiration.
 
 How to use
 ----------
