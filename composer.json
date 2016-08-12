@@ -2,11 +2,6 @@
     "name": "soap/yii2-language-switcher",
     "description": "Yii language switcher to be used with codemix/yii2-localeurls",
     "type": "yii2-widget",
-    "require": {
-        "php": ">= 5.4.0",
-        "yiisoft/yii2": "~2.0",
-        "codemix/yii2-localeurls": "^1.4"
-    },
     "license": "MIT",
     "authors": [
         {
@@ -15,6 +10,17 @@
         }
     ],
     "minimum-stability": "stable",
+    "require": {
+        "php": ">= 5.4.0",
+        "yiisoft/yii2": "~2.0",
+        "codemix/yii2-localeurls": "^1.4"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "2.*",
+        "codeception/specify": "*",
+        "codeception/verify": "*",
+        "codeception/c3": "*"
+    },
     "autoload": {
         "psr-4": {
             "soap\\LanguageSwitcher\\": "src/"
