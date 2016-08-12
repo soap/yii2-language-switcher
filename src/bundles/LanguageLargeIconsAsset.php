@@ -14,7 +14,7 @@ class LanguageLargeIconsAsset extends AssetBundle {
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vendor/soap/yii2-language-picker/src/assets';
+    public $sourcePath = '@vendor/soap/yii2-language-switcher/src/assets';
 
     /**
      * @inheritdoc
