@@ -6,8 +6,6 @@ use Yii;
 use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\base\Widget;
-use yii\bootstrap\ButtonDropdown;
-use yii\bootstrap\Dropdown;
 
 class LanguageSwitcher extends Widget
 {
@@ -96,7 +94,6 @@ class LanguageSwitcher extends Widget
     private $_isError;
 
     private $_items = [];
-
 
 
     public function init()
@@ -202,7 +199,7 @@ class LanguageSwitcher extends Widget
     }
 
     /**
-     * Rendering dropdown list.
+     * Rendering Dropdown list.
      * @param boolean $isInteger
      * @return string
      */
@@ -237,9 +234,10 @@ class LanguageSwitcher extends Widget
 
         return strtr($this->parentTemplate, ['{items}' => $items, '{size}' => $this->size]);
     }
+
     /**
-     * Rendering languege element.
-     * @param string $language The property of a given language.
+     * Rendering language element.
+     * @param array $language The property of a given language.
      * @param string $name The property of a language name.
      * @param string $template The basic structure of a language element of the displayed language picker
      * Elements to replace: "{link}" URL to call when changing language.url
