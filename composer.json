@@ -12,8 +12,10 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">= 5.4.0",
-        "yiisoft/yii2": "~2.0",
-        "codemix/yii2-localeurls": "^1.4"
+        "yiisoft/yii2": "~2.0.8",
+        "codemix/yii2-localeurls": "^1.7",
+        "bower-asset/bootstrap": "^3.3",
+        "npm-asset/jquery": "^2.2"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "2.*",
@@ -21,6 +23,12 @@
         "codeception/verify": "*",
         "codeception/c3": "*"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "soap\\LanguageSwitcher\\": "src/"
