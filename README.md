@@ -14,7 +14,7 @@ Installation
 ------------
 Install through composer is the preferable way.
 
-```composer require soap/yii2-language-switcher "@dev"``
+``composer require soap/yii2-language-switcher "@dev"``
 
 How to use
 ----------
